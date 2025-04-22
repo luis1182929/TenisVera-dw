@@ -37,9 +37,7 @@
 
 
 
-img {
-    border: 3px solid red;
-  }
+
 .navbar {
     background-color: none;
     padding: 3 0px;
@@ -51,7 +49,9 @@ img {
     font-weight: bold;
 }
 
-
+body {
+    background-color: red !important;
+  }
 
 
 header {
