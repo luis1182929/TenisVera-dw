@@ -1,0 +1,650 @@
+/* Variables y reset*/
+:root {
+    --main-color: #000000;
+    --main-text-color: #14213d;
+    --main-text-light-color: #3e5c76;
+
+    background-color: #ffffff;
+    font-family: "Boldonse", system-ui, sans-serif;
+    font-size: 1em;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "header   header   header header"
+        "main     main     main   aside"
+        "ofertas ofertas  ofertas aside"
+        "footer   footer   footer aside";
+    grid-template-columns: auto auto 200px 200px;
+    grid-template-rows: 1fr auto auto auto;
+
+}
+
+/* layout y estructura */
+
+/*nav*/
+
+
+
+
+
+
+.navbar {
+    background-color: none;
+    padding: 3 0px;
+
+}
+
+.nav-link:hover {
+    color: #d90429;
+    font-weight: bold;
+}
+
+
+
+
+header {
+    grid-area: header;
+    background-color: #ffffff;
+    padding: 0 0px;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    /* ¡OJO! Quitamos el display flex que estaba dañando todo */
+}
+
+
+header a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: "Bolsystem-uidonse", sans-serif;
+    font-weight: bold;
+}
+
+div.container-fluid {
+    padding: 0 0px;
+}
+
+
+header a:hover {
+    color: #d90429;
+}
+
+.offcanvas-body {
+    overflow-y: auto;
+}
+
+#heightlogin {
+    height: 100vh;
+
+
+}
+
+
+
+
+.carousel-inner {
+    height: 400px;
+}
+
+.carousel-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+    margin-top: 0px
+}
+
+#sizecarouseltip {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.carousel-item .card {
+    height: 180px;
+    background-color: #e5e6e7;
+}
+
+#email {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#password {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.login {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.login img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.containerlogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/images/blur2.jpeg);
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.containerlogin a {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+
+}
+
+#borderlogin {
+    border-radius: 30px;
+
+}
+.btn-login {
+    background-color: #007bff;   /* azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #0056b3;   /* azul más oscuro al hacer hover */
+  }
+
+.borrosa {
+    filter: blur(5px);
+}
+
+
+
+
+div form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+div .card .login {
+    margin-top: 30px;
+}
+
+.icons {
+    margin: 0 15px;
+}
+
+div .logo {
+    display: flex;
+
+}
+
+main {
+    grid-area: main;
+
+}
+
+main h1 {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #000000;
+
+
+}
+
+.ofertared {
+    color: #d90429;
+}
+
+
+
+
+.banner1 {
+    text-align: center;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+}
+
+#banner {
+    text-align: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    min-width: 300px;
+    gap: 20px;
+
+
+
+
+}
+
+
+
+#banner h1 {
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+#banner img {
+    height: 30vh;
+    border-radius: 15px;
+
+
+
+}
+
+
+#banner div a img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+
+}
+
+.bannerleft {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #d90429;
+    color: white;
+    border-radius: 8px;
+
+
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+
+
+
+.boton {
+    background-color: #d90429;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+
+}
+
+main button {
+    background-color: #d90429;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ofertascontainer {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+
+
+
+
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+
+}
+
+#ofertas {
+    grid-area: ofertas;
+
+}
+
+
+
+#ofertas .ofertascontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px 10px 20px;
+
+
+
+}
+
+#ofertas .ofertascontainer article {
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px
+}
+
+#ofertas article button {
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    border: none;
+
+
+}
+
+#ofertas article img {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#imgraqueta {
+    width: 223px;
+
+}
+
+#titleofertas {
+
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+
+.racketscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px 10px 20px;
+
+}
+
+#vermas {
+    text-align: center;
+    margin: 40px 0 60px 0;
+    font-size: 18px;
+
+
+}
+
+#vermas:hover {
+    color: #d90429;
+    font-size: 20px;
+}
+
+#vermas a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: "Bolsystem-uidonse", sans-serif;
+    font-weight: bold;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #b1b1b1;
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside section img {
+    max-width: 100%;
+    align-items: center;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+
+
+}
+
+aside section {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: #14213d solid;
+
+
+}
+
+#asideimg {
+    border-top: #14213d solid;
+}
+
+
+
+aside div p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: #b2bcc5;
+    height: 200px;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-weight: lighter;
+
+}
+
+.wpp img {
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+#derechos {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        display: grid;
+        grid-template-areas: "header   header"
+            "main     main"
+            "ofertas ofertas"
+            "aside   aside"
+            "footer   footer";
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr auto auto auto auto;
+
+
+
+    }
+
+    #imgsize {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #imgsize section {
+        flex: 1 1 200px;
+        max-width: 300px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #imgsize section img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+
+    aside section img {
+
+
+        border: none;
+        border-bottom: none;
+
+
+    }
+
+    aside section {
+        border: none;
+
+
+    }
+
+    section #asideimg {
+
+        border: none;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* pages */
+/* HOME */
+
+
+
+
+
+
+
+
+/*contacto*/
