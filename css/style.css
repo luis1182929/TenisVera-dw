@@ -569,20 +569,19 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    body {
+    .grid {
         display: grid;
-        grid-template-areas: "header   header"
-            "main     main"
-            "ofertas ofertas"
-            "aside   aside"
-            "footer   footer";
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr auto auto auto auto;
-
-
-
-    }
-
+        grid-template-areas:
+          "header"
+          "main"
+          "ofertas"
+          "aside"
+          "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+      }
+    
+    
     #imgsize {
         display: flex;
         flex-wrap: wrap;
