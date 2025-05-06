@@ -1,0 +1,24 @@
+header {
+    grid-area: header;
+    background-color: #ffffff;
+    padding: 0 0px;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    a {
+        text-decoration: none;
+        color: var(--main-text-color);
+        font-family: "Bolsystem-uidonse", sans-serif;
+        font-weight: bold;
+
+        &:hover {
+            color: #d90429;
+        }
+    }
+}
+
+div .logo {
+    display: flex;
+}

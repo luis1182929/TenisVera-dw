@@ -1,0 +1,39 @@
+.btn-login {
+    background-color: #007bff; // azul
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0056b3; // azul más oscuro al hacer hover
+    }
+  }
+  
+  .btn {
+    background-color: #d90429;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .boton {
+    background-color: #d90429;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  main {
+    button {
+      background-color: #d90429;
+      color: white;
+      border-radius: 8px;
+      padding: 5px;
+    }
+  }
+   

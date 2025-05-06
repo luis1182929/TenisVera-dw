@@ -1,0 +1,30 @@
+footer {
+    grid-area: footer;
+    background-color: #b2bcc5;
+    height: 200px;
+  }
+  
+  .footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-weight: lighter;
+  }
+  
+  .socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #derechos {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #000000;
+  }

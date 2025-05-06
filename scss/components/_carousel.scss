@@ -1,0 +1,26 @@
+.carousel-inner {
+    height: 400px;
+  }
+  
+  .carousel-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel {
+    margin-top: 0px;
+  }
+  
+  #sizecarouseltip {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item {
+    .card {
+      height: 180px;
+      background-color: #e5e6e7;
+    }
+  }

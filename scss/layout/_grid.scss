@@ -1,0 +1,24 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+      "header   header   header header"
+      "main     main     main   aside"
+      "ofertas ofertas  ofertas aside"
+      "footer   footer   footer aside";
+    grid-template-columns: auto auto 200px 200px;
+    grid-template-rows: 1fr auto auto auto;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .grid {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "ofertas"
+        "aside"
+        "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto;
+    }
+  }
